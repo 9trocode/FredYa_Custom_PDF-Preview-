@@ -199,7 +199,6 @@ export default class Home extends Vue {
 
   @Watch('update_json_prop')
 
-
  public update_json_prop($val: any[], $oldVal: any) {
     this.pdfJson = $val;
   }
