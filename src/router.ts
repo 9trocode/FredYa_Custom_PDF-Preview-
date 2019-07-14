@@ -1,9 +1,14 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
 import store from './store';
+import Home from '@/views/Home.vue';
 
 Vue.use(Router);
+
+function loadSplit(view: string) {
+  return () => import(/* webpackChunkName: "view-[request]" */ `@/views/${view}.vue`);
+}
+
 
 export const router = new Router({
   mode: 'history',
@@ -12,12 +17,12 @@ export const router = new Router({
     {
       path: '/',
       name: 'home',
-      component: () => import(/* webpackChunkName: "about" */ './views/Home.vue'),
+      component: Home,
     },
     {
       path: '/about',
       name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ './views/Home.vue'),
+      component: loadSplit('Home'),
     },
   ],
 });
@@ -29,6 +34,8 @@ router.beforeEach((to, from, next) => {
     store.dispatch('load_pdf_json')
         .then(next);
     }
+  // tslint:disable-next-line:no-console
+  console.log('e no work');
 });
 
 export default router;
