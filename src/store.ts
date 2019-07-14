@@ -1,8 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import axios from 'axios';
-import VueAxios from 'vue-axios';
-import any = jasmine.any;
 
 Vue.use(Vuex);
 
@@ -29,7 +27,7 @@ export default new Vuex.Store({
   actions: {
     load_pdf_json({ commit }) {
       axios
-          .get('http://ds-staging.freyda.io/v1/pdfs/5d2512ce79b9696418af9e2d')
+          .get('http://ds-staging.freyda.io/v1/pdfs/5d28cb51a860eb1b9b408fab/view')
           .then((r) => r.data)
           .then((fredyapdfJson) => {
             commit('PDF_JSON', fredyapdfJson);
