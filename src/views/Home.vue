@@ -2,10 +2,11 @@
   <div>
   <div class="home">
 
-      <Menubar></Menubar>
+      <Menubar :content="content.page_content" v-for="(content, key) in pdfJson.data.results"></Menubar>
 
       <div class="clear"></div>
 
+      <editor-content :editor="editor" />
 
     <json_receiver :content="content.page_content" v-for="(content, key) in pdfJson.data.results" :number="content.page_number"></json_receiver>
 
@@ -20,6 +21,7 @@ import { Component, Vue,  Watch } from 'vue-property-decorator';
 import Header from '@/components/tiptap_menu_bar.vue';
 import Page from '@/components/Page.vue';
 
+
 @Component({
     components: {
         Menubar: Header,
@@ -29,8 +31,15 @@ import Page from '@/components/Page.vue';
 export default class Home extends Vue {
 
     public pdfJson!: '' | {}; // <- for static type checking
+    public editor: {} | undefined;
 
     @Watch('update_json_prop')
+
+    // public mounted(){
+    //     // this.editor = new Editor({
+    //     //     content: '<p>This is just a boring paragraph</p>',
+    //     // })
+    // }
 
     public update_json_prop($val: any[], $oldVal: any) {
         this.pdfJson = $val;

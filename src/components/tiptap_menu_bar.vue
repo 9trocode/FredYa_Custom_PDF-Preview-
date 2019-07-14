@@ -1,6 +1,7 @@
 <template>
 <div class="tiptap_menu_bar">
 
+
         <div class="container-fluid">
             <div class="content">
                 <div class="whiteBar">
@@ -8,7 +9,7 @@
                     <a href="#"><img class="docsLogo" src="http://static1.squarespace.com/static/55dcfb03e4b07360409d0471/55e724bde4b0c296de94c811/55e724c0e4b0c296de94c833/1441211585166/bluedoclogo.png?" alt=""></a>
 
                     <h1 id="untitled">
-                        <!--          <em>{{pdfJson.data.pdf.pages[0].text_segments[0].title}}</em>-->
+                        <em>{{content[0].content[0].text}}</em>
                     </h1>
 
                     <ul id="mainMenu">
@@ -93,9 +94,10 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 
-// @Component({
-//     props: ['content', 'number'],
-// })
+
+@Component({
+    props: ['content'],
+})
 
 export default class TiptarMenu extends Vue {
    public mounted() {

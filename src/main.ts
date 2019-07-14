@@ -4,18 +4,23 @@ import router from './router';
 import store from './store';
 import './registerServiceWorker';
 import {mapGetters} from 'vuex';
+// @ts-ignore
+// import { Editor, EditorContent } from 'tiptap';
+
 
 Vue.config.productionTip = true;
 
+// Vue.use(Editor);
 // Getting My Computed and others Globally to reduce import on every components
 Vue.mixin({
+    // tslint:disable-next-line:no-empty
+    // components: {
+    //     EditorContent,
+    // },
     computed: {
         ...mapGetters({
             pdfJson: 'getJson',
         }),
-    },
-    watch: {
-
     },
 });
 
