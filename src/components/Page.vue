@@ -1,28 +1,10 @@
 <template>
-    <div class="page">
-        <div id="paragraph" v-for="(paragraph, key) in content" :key="key">
-            <p v-for="(span, index) in paragraph.content" :key="index" :style="styleParagraph(span)">
+    <div class="page" :style="`text-align: ${number === 1 ?'center': 'left'};padding-top: ${number === 1 ?'25%': 'auto'}`">
+        <div v-for="(paragraph, key) in content" :key="key">
+            <span class="span" v-for="(span, index) in paragraph.content" :key="index" :style="styleParagraph(paragraph, span)">
                 {{span.text}}
-            </p>
-<!--            <span  id="headline">{{pdfJson.data.pdf.pages[0].text_segments[0].title}}</span><br><br>-->
-<!--            <span id="h2" style=" margin-left: 36%">{{pdfJson.data.pdf.pages[0].text_segments[1].title}}</span><br><br>-->
-<!--            <span id="h2" style=" margin-left: 42%">{{pdfJson.data.pdf.pages[0].text_segments[2].title}}</span><br><br><br>-->
+            </span>
 
-<!--            <span class="h2"><strong>{{pdfJson.data.pdf.pages[1].text_segments[0].title}}</strong></span><br><br>-->
-
-<!--            {{pdfJson.data.pdf.pages[1].tables[0].csv}}<br><br>-->
-<!--            {{pdfJson.data.pdf.pages[2].tables[0].csv}}<br><br>-->
-
-<!--            <span class="h2"><strong>{{pdfJson.data.pdf.pages[3].text_segments[0].title}}</strong></span><br><br>-->
-
-<!--            <em>{{pdfJson.data.pdf.pages[3].text_segments[1].title}}</em><br><br>-->
-<!--            <em>{{pdfJson.data.pdf.pages[3].text_segments[2].title}}</em><br><br>-->
-<!--            <em>{{pdfJson.data.pdf.pages[3].text_segments[3].title}}</em><br><br>-->
-<!--            <em>{{pdfJson.data.pdf.pages[3].text_segments[4].title}}</em><br><br>-->
-
-
-<!--            {{pdfJson.data.pdf.pages[3].tables[0].csv}}.<br><br>-->
-<!--            {{pdfJson.data.pdf.pages[3].tables[1].csv}}.<br><br>-->
         </div><!--end paragraph-->
 
     </div><!-- end page-->
@@ -38,24 +20,23 @@
 
     export default class Page extends Vue {
 
-          styleParagraph(span){
-              return `
-              font-size: ${this.content.font_size};
-              font-family: ${this.content.font_style};
-              top: ${span.top};
-              left: ${span.left};
-              bottom: ${span.bottom};
-              right: ${span.right};
+          styleParagraph( paragraph, span ){
+              console.log(paragraph.font_style);
+              let fontFamily = ['Calibri', 'Calibri-Bold'].includes(paragraph.font_style) ? 'Calibri': paragraph.font_style;
+              let fontWeight = paragraph.font_style === 'Calibri-Bold' ? 'bold': 'normal';
 
-              `;
+              return `font-size: ${paragraph.font_size};font-weight: ${fontWeight};font-family: ${fontFamily};top: ${span.top};left: ${span.left};bottom: ${span.bottom};right: ${span.right};`;
           }
 
-        mounted() {
-            // console.log(this.content);
-        }
+        // mounted() {
+        //     // console.log(this.content);
+        // }
     }
 </script>
 
 <style lang="sass" scoped>
-
+.page
+    padding: 65px
+    .span
+        line-height: 40px
 </style>
