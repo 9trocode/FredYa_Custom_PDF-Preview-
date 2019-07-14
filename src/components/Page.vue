@@ -5,9 +5,9 @@
                 {{span.text}}
             </span>
 
-        </div><!--end paragraph-->
+        </div>
 
-    </div><!-- end page-->
+    </div>
 
 </template>
 
@@ -37,6 +37,8 @@
 <style lang="sass" scoped>
 .page
     padding: 65px
+    margin-top: 12px
+    margin-bottom: 30px
     .span
         line-height: 40px
 </style>
