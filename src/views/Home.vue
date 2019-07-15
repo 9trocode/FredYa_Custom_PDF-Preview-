@@ -6,9 +6,7 @@
 
       <div class="clear"></div>
 
-      <editor-content :editor="editor" />
-
-    <json_receiver :content="content.page_content" v-for="(content, key) in pdfJson.data.results" :number="content.page_number"></json_receiver>
+     <json_receiver :content="content.page_content" v-for="(content, key) in pdfJson.data.results" :number="content.page_number"></json_receiver>
 
   </div>
 
