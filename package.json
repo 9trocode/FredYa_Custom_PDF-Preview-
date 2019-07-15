@@ -20,7 +20,6 @@
     "loadash": "^1.0.0",
     "localforage": "^1.7.3",
     "register-service-worker": "^1.6.2",
-    "tiptap": "^1.23.2",
     "vue": "^2.6.10",
     "vue-axios": "^2.1.4",
     "vue-class-component": "^7.0.2",
