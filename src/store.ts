@@ -11,26 +11,26 @@ export default new Vuex.Store({
   strict: debug,
 
   state: {
-    fredyapdfJson: [Object],
+    pdfData: [Object],
   },
 
   mutations: {
-    PDF_JSON(state, fredyapdfJson) {
-      state.fredyapdfJson = fredyapdfJson;
+    PDF_JSON(state, pdfData) {
+      state.pdfData = pdfData;
     },
   },
 
   getters: {
-    getJson: (state) => state.fredyapdfJson,
+    getJsonData: (state) => state.pdfData,
   },
 
   actions: {
-    load_pdf_json({ commit }) {
+    loadData({commit}) {
       axios
           .get('http://ds-staging.freyda.io/v1/pdfs/5d28cb51a860eb1b9b408fab/view')
           .then((r) => r.data)
-          .then((fredyapdfJson) => {
-            commit('PDF_JSON', fredyapdfJson);
+          .then((pdfData) => {
+            commit('PDF_JSON', pdfData);
           });
     },
   },
