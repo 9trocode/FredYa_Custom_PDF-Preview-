@@ -1,22 +1,23 @@
 <template>
-  <div>
-  <div class="home">
+    <div>
+        <div class="home">
 
-      <Menubar :content="content.page_content" v-for="(content, key) in pdfJson.data.results"></Menubar>
+            <Menubar :content="content.page_content" v-for="(content, key) in pdfJson.data.results"></Menubar>
 
-      <div class="clear"></div>
+            <div class="clear"></div>
 
-     <json_receiver :content="content.page_content" v-for="(content, key) in pdfJson.data.results" :number="content.page_number"></json_receiver>
+            <json_receiver :content="content.page_content" v-for="(content, key) in pdfJson.data.results"
+                           :number="content.page_number"></json_receiver>
 
-  </div>
+        </div>
 
-  </div>
+    </div>
 
 </template>
 
 <script lang="ts">
-import { Component, Vue,  Watch } from 'vue-property-decorator';
-import Header from '@/components/tiptap_menu_bar.vue';
+import {Component, Vue, Watch} from 'vue-property-decorator';
+import Header from '@/components/menu_bar.vue';
 import Page from '@/components/Page.vue';
 
 
@@ -33,11 +34,9 @@ export default class Home extends Vue {
 
     @Watch('update_json_prop')
 
-    // public mounted(){
-    //     // this.editor = new Editor({
-    //     //     content: '<p>This is just a boring paragraph</p>',
-    //     // })
-    // }
+    public mounted() {
+        window.document.designMode = 'On';
+    }
 
     public update_json_prop($val: any[], $oldVal: any) {
         this.pdfJson = $val;
@@ -47,5 +46,5 @@ export default class Home extends Vue {
 </script>
 
 <style lang="sass">
-    @import  '../assets/init.sass'
+    @import '../assets/init.sass'
 </style>

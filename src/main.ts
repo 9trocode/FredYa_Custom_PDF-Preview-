@@ -19,7 +19,7 @@ Vue.mixin({
     // },
     computed: {
         ...mapGetters({
-            pdfJson: 'getJson',
+            pdfJson: 'getJsonData',
         }),
     },
 });

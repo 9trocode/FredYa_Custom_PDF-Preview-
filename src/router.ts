@@ -29,9 +29,9 @@ export const router = new Router({
 
 router.beforeEach((to, from, next) => {
 
-  if (store.state.fredyapdfJson.length === 1) {
+  if (store.state.pdfData.length === 1) {
     // tslint:disable-next-line:no-console
-    store.dispatch('load_pdf_json')
+    store.dispatch('loadData')
         .then(next);
     }
   // tslint:disable-next-line:no-console
