@@ -27,7 +27,7 @@ export default new Vuex.Store({
   actions: {
     loadData({commit}) {
       axios
-          .get('http://ds-staging.freyda.io/v1/pdfs/5d28cb51a860eb1b9b408fab/view')
+          .get('https://ds-staging.freyda.io/v1/pdfs/5d28cb51a860eb1b9b408fab/view')
           .then((r) => r.data)
           .then((pdfData) => {
             commit('PDF_JSON', pdfData);
