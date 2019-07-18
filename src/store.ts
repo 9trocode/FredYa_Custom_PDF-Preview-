@@ -33,5 +33,9 @@ export default new Vuex.Store({
             commit('PDF_JSON', pdfData);
           });
     },
+    // tslint:disable-next-line:only-arrow-functions variable-name
+    ManualData({commit}, DemoJson) {
+      commit('PDF_JSON', DemoJson);
+    },
   },
 });
