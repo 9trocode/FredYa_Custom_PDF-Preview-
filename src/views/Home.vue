@@ -7,7 +7,7 @@
             <div class="clear"></div>
 
             <json_receiver :content="content.page_content" v-for="(content, key) in pdfJson.data.results"
-                           :number="content.page_number"></json_receiver>
+                           :number="content.page_number" :p_dimensions="content.page_dimensions"></json_receiver>
 
         </div>
 
@@ -27,6 +27,7 @@ import Page from '@/components/Page.vue';
         json_receiver: Page,
     },
 })
+
 export default class Home extends Vue {
 
     public pdfJson!: '' | {}; // <- for static type checking

@@ -102,7 +102,6 @@
                     <a @click="initToolBar('outdent')" class="toolbarButtonsIndentRight" href="#!"><i class="fas fa-outdent"></i></a>
                     <a @click="initToolBar('removeFormat')" class="toolbarButtonsLine" href="#!"><i class="fas fa-remove-format"></i></a>
 
-
                 </div><!--end toolbag -->
 
                 <div class="slider">
