@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.ee6427bf2a86e823b88949df86868b43.js"
+  "/precache-manifest.365e1c05b5f50ae359268a49c64b7185.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "fredya_doc_poc"});

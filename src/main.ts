@@ -3,15 +3,11 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';
-// tslint:disable-next-line:no-var-requires
-require('dotenv').config();
 import {mapGetters} from 'vuex';
 
 
 Vue.config.productionTip = true;
-// tslint:disable-next-line:no-console
-console.log(process.env.Api_Endpoint);
-
+Vue.prototype.$apiUrl = 'My App';
 
 // Getting My Computed and others Globally to reduce import on every components
 Vue.mixin({

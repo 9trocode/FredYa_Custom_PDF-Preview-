@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@types/jest": "^23.1.4",
+    "@types/dotenv": "^6.1.0",
     "@vue/cli-plugin-babel": "^3.9.0",
     "@vue/cli-plugin-e2e-nightwatch": "^3.9.0",
     "@vue/cli-plugin-pwa": "^3.9.0",
