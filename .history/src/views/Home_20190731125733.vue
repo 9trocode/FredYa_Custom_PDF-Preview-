@@ -29,7 +29,7 @@ import Page from '@/components/Page.vue';
 })
 
 export default class Home extends Vue {
-    public pdfJson!: '' | object; // <- for static type checking
+    public pdfJson!: '' | {}; // <- for static type checking
     public editor: {} | undefined;
 
     @Watch('update_json_prop')

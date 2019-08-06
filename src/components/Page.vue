@@ -24,7 +24,7 @@
         styleParagraph = (paragraph, span) => {
             let fontFamily = ['Calibri', 'Calibri-Bold'].includes(paragraph.font_style) ? 'Calibri' : paragraph.font_style;
             let fontWeight = paragraph.font_style === 'Calibri-Bold' ? 'bold' : 'normal';
-            return `font-size: ${paragraph.font_size};font-weight: ${fontWeight};font-family: ${fontFamily};position:absolute;top: ${span.top}px;left: ${span.left}px;bottom: ${span.bottom};right:${span.right}`;
+            return `font-size: ${paragraph.font_size}px;font-weight: ${fontWeight}px;font-family: ${fontFamily};position:absolute;top: ${span.top}px;left: ${span.left}px;bottom: ${span.bottom};right:${span.right}`;
         };
         stylePage = (p_dimensions) => {
             let pageOrientation = p_dimensions.orientation === 'PORTRAIT' ? '800.32px' : `${p_dimensions.width}`;
