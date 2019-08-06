@@ -44,22 +44,22 @@ router.beforeEach((to, from, next) => {
                     page_number: 1,
                     page_content: [
                         {
-                            font_style: 'Calibri-Bold',
+                            font_style: 'Calibri - Bold',
                             font_size: 9.960000038146973,
                             content: [
                                 {
                                     text: 'Strictly Private & Confidential ',
-                                    left: 72.02400207519531,
-                                    top: 784.2659912109375,
-                                    right: 197.39096069335938,
-                                    bottom: 794.2259521484375,
+                                    left: 96.032,
+                                    top: 1045.688,
+                                    right: 263.1879,
+                                    bottom: 1058.9679,
                                 },
                                 {
                                     text: 'For circulation to Limited Partners only ',
-                                    left: 72.02400207519531,
-                                    top: 796.5059814453125,
-                                    right: 236.0609588623047,
-                                    bottom: 806.4659423828125,
+                                    left: 96.032,
+                                    top: 1062.008,
+                                    right: 314.7479,
+                                    bottom: 1075.2879,
                                 },
                             ],
                         },
@@ -69,10 +69,10 @@ router.beforeEach((to, from, next) => {
                             content: [
                                 {
                                     text: 'Elysian Capital II LP ',
-                                    left: 242.08999633789062,
-                                    top: 164.80996704101562,
-                                    right: 356.4030456542969,
-                                    bottom: 178.84996032714844,
+                                    left: 322.7867,
+                                    top: 219.7466,
+                                    right: 475.2041,
+                                    bottom: 238.4666,
                                 },
                             ],
                         },
@@ -82,10 +82,10 @@ router.beforeEach((to, from, next) => {
                             content: [
                                 {
                                     text: 'Unaudited Quarterly Report ',
-                                    left: 215.92999267578125,
-                                    top: 191.20999145507812,
-                                    right: 382.68304443359375,
-                                    bottom: 205.24998474121094,
+                                    left: 287.9067,
+                                    top: 254.9467,
+                                    right: 510.2441,
+                                    bottom: 273.6666,
                                 },
                             ],
                         },
@@ -95,10 +95,10 @@ router.beforeEach((to, from, next) => {
                             content: [
                                 {
                                     text: '30 June 2018 ',
-                                    left: 259.8500061035156,
-                                    top: 217.60995483398438,
-                                    right: 338.6430358886719,
-                                    bottom: 231.6499481201172,
+                                    left: 346.4667,
+                                    top: 290.1466,
+                                    right: 451.524,
+                                    bottom: 308.8666,
                                 },
                             ],
                         },
@@ -122,10 +122,10 @@ router.beforeEach((to, from, next) => {
                             content: [
                                 {
                                     text: 'Elysian Capital II LP - Key Facts ',
-                                    left: 72.02400207519531,
-                                    top: 37.529998779296875,
-                                    right: 199.9109649658203,
-                                    bottom: 47.4900016784668,
+                                    left: 96.032,
+                                    top: 50.04,
+                                    right: 266.548,
+                                    bottom: 63.32,
                                 },
                             ],
                         },
@@ -135,17 +135,17 @@ router.beforeEach((to, from, next) => {
                             content: [
                                 {
                                     text: 'Strictly Private & Confidential ',
-                                    left: 72.02400207519531,
-                                    top: 784.2659912109375,
-                                    right: 197.39096069335938,
-                                    bottom: 794.2259521484375,
+                                    left: 96.032,
+                                    top: 1045.688,
+                                    right: 263.1879,
+                                    bottom: 1058.9679,
                                 },
                                 {
                                     text: 'For circulation to Limited Partners only ',
-                                    left: 72.02400207519531,
-                                    top: 796.5059814453125,
-                                    right: 236.0609588623047,
-                                    bottom: 806.4659423828125,
+                                    left: 96.032,
+                                    top: 1062.008,
+                                    right: 314.7479,
+                                    bottom: 1075.2879,
                                 },
                             ],
                         },
@@ -155,10 +155,10 @@ router.beforeEach((to, from, next) => {
                             content: [
                                 {
                                     text: 'Key Facts ',
-                                    left: 77.42400360107422,
-                                    top: 97.91000366210938,
-                                    right: 118.31095886230469,
-                                    bottom: 107.87000274658203,
+                                    left: 103.232,
+                                    top: 130.5467,
+                                    right: 157.7479,
+                                    bottom: 143.8267,
                                 },
                             ],
                         },
@@ -168,17 +168,17 @@ router.beforeEach((to, from, next) => {
                             content: [
                                 {
                                     text: 'First Closing ',
-                                    left: 77.42400360107422,
-                                    top: 122.38998413085938,
-                                    right: 128.63095092773438,
-                                    bottom: 132.34999084472656,
+                                    left: 103.232,
+                                    top: 163.1866,
+                                    right: 171.5079,
+                                    bottom: 176.4667,
                                 },
                                 {
                                     text: '21 April 2015 ',
-                                    left: 231.64999389648438,
-                                    top: 122.38998413085938,
-                                    right: 287.90093994140625,
-                                    bottom: 132.34999084472656,
+                                    left: 308.8667,
+                                    top: 163.1866,
+                                    right: 383.8679,
+                                    bottom: 176.4667,
                                 },
                             ],
                         },
@@ -188,17 +188,17 @@ router.beforeEach((to, from, next) => {
                             content: [
                                 {
                                     text: 'Final Closing ',
-                                    left: 77.42400360107422,
-                                    top: 146.74996948242188,
-                                    right: 130.1909637451172,
-                                    bottom: 156.70997619628906,
+                                    left: 103.232,
+                                    top: 195.6666,
+                                    right: 173.588,
+                                    bottom: 208.9466,
                                 },
                                 {
                                     text: '16 July 2015 ',
-                                    left: 231.64999389648438,
-                                    top: 146.74996948242188,
-                                    right: 284.0609436035156,
-                                    bottom: 156.70997619628906,
+                                    left: 308.8667,
+                                    top: 195.6666,
+                                    right: 378.7479,
+                                    bottom: 208.9466,
                                 },
                             ],
                         },
@@ -208,17 +208,17 @@ router.beforeEach((to, from, next) => {
                             content: [
                                 {
                                     text: 'Commitment period ',
-                                    left: 77.42400360107422,
-                                    top: 171.10995483398438,
-                                    right: 162.23095703125,
-                                    bottom: 181.06996154785156,
+                                    left: 103.232,
+                                    top: 228.1466,
+                                    right: 216.3079,
+                                    bottom: 241.4266,
                                 },
                                 {
                                     text: 'No later than 16 July 2020 ',
-                                    left: 231.64999389648438,
-                                    top: 171.10995483398438,
-                                    right: 340.1209411621094,
-                                    bottom: 181.06996154785156,
+                                    left: 308.8667,
+                                    top: 228.1466,
+                                    right: 453.4946,
+                                    bottom: 241.4266,
                                 },
                             ],
                         },
@@ -228,17 +228,17 @@ router.beforeEach((to, from, next) => {
                             content: [
                                 {
                                     text: 'Total Commitment ',
-                                    left: 77.42400360107422,
-                                    top: 195.58999633789062,
-                                    right: 156.35096740722656,
-                                    bottom: 205.5500030517578,
+                                    left: 103.232,
+                                    top: 260.7867,
+                                    right: 208.468,
+                                    bottom: 274.0667,
                                 },
                                 {
                                     text: '£250 million 1',
-                                    left: 231.64999389648438,
-                                    top: 194.71995544433594,
-                                    right: 294.2609558105469,
-                                    bottom: 205.5500030517578,
+                                    left: 308.8667,
+                                    top: 259.6266,
+                                    right: 392.3479,
+                                    bottom: 274.0667,
                                 },
                             ],
                         },
@@ -248,17 +248,105 @@ router.beforeEach((to, from, next) => {
                             content: [
                                 {
                                     text: 'Fund’s domicile ',
-                                    left: 77.42400360107422,
-                                    top: 219.94998168945312,
-                                    right: 143.27096557617188,
-                                    bottom: 229.9099884033203,
+                                    left: 103.232,
+                                    top: 293.2666,
+                                    right: 191.028,
+                                    bottom: 306.5467,
                                 },
                                 {
                                     text: 'England & Wales ',
-                                    left: 231.64999389648438,
-                                    top: 219.94998168945312,
-                                    right: 302.54095458984375,
-                                    bottom: 229.9099884033203,
+                                    left: 308.8667,
+                                    top: 293.2666,
+                                    right: 403.3879,
+                                    bottom: 306.5467,
+                                },
+                            ],
+                        },
+                        {
+                            font_style: 'Calibri',
+                            font_size: 9.960000038146973,
+                            content: [
+                                {
+                                    text: 'Base Currency ',
+                                    left: 103.232,
+                                    top: 325.9066,
+                                    right: 183.508,
+                                    bottom: 339.1866,
+                                },
+                                {
+                                    text: 'GBP ',
+                                    left: 308.8667,
+                                    top: 325.9066,
+                                    right: 334.428,
+                                    bottom: 339.1866,
+                                },
+                            ],
+                        },
+                        {
+                            font_style: 'Calibri',
+                            font_size: 9.960000038146973,
+                            content: [
+                                {
+                                    text: 'Legal Form ',
+                                    left: 103.232,
+                                    top: 358.3867,
+                                    right: 165.588,
+                                    bottom: 371.6667,
+                                },
+                                {
+                                    text: 'English Limited Partnership ',
+                                    left: 308.8667,
+                                    top: 358.3867,
+                                    right: 459.5746,
+                                    bottom: 371.6667,
+                                },
+                            ],
+                        },
+                        {
+                            font_style: 'Calibri',
+                            font_size: 9.960000038146973,
+                            content: [
+                                {
+                                    text: 'Term ',
+                                    left: 103.232,
+                                    top: 391.0666,
+                                    right: 134.7133,
+                                    bottom: 404.3466,
+                                },
+                                {
+                                    // tslint:disable-next-line:max-line-length
+                                    text: 'The Fund will have an initial term of ten years from the Final Closing Date.  The ',
+                                    left: 308.8667,
+                                    top: 391.0666,
+                                    right: 731.9676,
+                                    bottom: 404.3466,
+                                },
+                                {
+                                    text: 'term may be extended for up to a maximum of two consecutive one – year ',
+                                    left: 308.8667,
+                                    top: 407.2266,
+                                    right: 732.2256,
+                                    bottom: 420.5066,
+                                },
+                                {
+                                    text: 'periods by the Manager with prior approval of the Advisory Committee. ',
+                                    left: 308.8667,
+                                    top: 423.5467,
+                                    right: 700.5746,
+                                    bottom: 436.8267,
+                                },
+                            ],
+                        },
+                        {
+                            font_style: 'Calibri',
+                            font_size: 6.480000019073486,
+                            content: [
+                                {
+                                    text: '1  Includes GP Commitment ',
+                                    left: 96.032,
+                                    top: 502.0667,
+                                    right: 244.468,
+                                    bottom: 516.5066,
                                 },
                             ],
                         },
@@ -273,12 +361,12 @@ router.beforeEach((to, from, next) => {
                         padding_bottom: 806.4659423828125,
                     },
                 },
-               ],
-            },
-            };
+            ],
+        },
+    };
 
     // @ts-ignore
-        // tslint:disable-next-line:no-shadowed-variable no-unused-expression align
+    // tslint:disable-next-line:no-shadowed-variable no-unused-expression align
     store.dispatch('ManualData', DemoJson)
         .then(next);
 
