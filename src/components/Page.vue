@@ -13,7 +13,6 @@
     </div>
 
 </template>
-
 <script>
     import {Component, Vue, Watch} from 'vue-property-decorator';
 
